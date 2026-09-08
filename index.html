@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aleksandr Tiupin</title>
+    <meta name="description" content="Projects by Aleksandr Tiupin." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fbfbf9;
+        --fg: #1b1a17;
+        --muted: #6d6a63;
+        --rule: #e2e0d9;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #161513;
+          --fg: #eceae4;
+          --muted: #928e85;
+          --rule: #2c2a27;
+        }
+      }
+
+      body {
+        margin: 0;
+        padding: 12vh 24px 20vh;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 34rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      .tagline {
+        margin: 0 0 3rem;
+        color: var(--muted);
+      }
+
+      h2 {
+        margin: 0 0 1rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        padding: 0.85rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      li:last-child {
+        border-bottom: 1px solid var(--rule);
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: var(--rule);
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        text-decoration-color: currentColor;
+      }
+
+      .desc {
+        display: block;
+        color: var(--muted);
+        font-size: 0.9375rem;
+      }
+
+      footer {
+        margin-top: 3rem;
+        color: var(--muted);
+        font-size: 0.9375rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Aleksandr Tiupin</h1>
+      <p class="tagline">Games, tools, and other things that ended up on the web.</p>
+
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://atiupin.github.io/kbr/">King's Bounty in Russian</a>
+          <span class="desc">Fan translation of the original 1990 DOS game.</span>
+        </li>
+        <li>
+          <a href="https://atiupin.github.io/shadow/">Shadow of Luna</a>
+          <span class="desc">A game.</span>
+        </li>
+        <li>
+          <a href="https://atiupin.github.io/magika/">Magika</a>
+          <span class="desc">Magic compendium.</span>
+        </li>
+        <li>
+          <a href="https://atiupin.github.io/totem/">Totem</a>
+          <span class="desc">An experiment.</span>
+        </li>
+        <li>
+          <a href="https://atiupin.github.io/use-promise/">use-promise</a>
+          <span class="desc">Hook for declarative promises.</span>
+        </li>
+        <li>
+          <a href="https://atiupin.github.io/avaritia/">Avaritia</a>
+          <span class="desc">An experiment.</span>
+        </li>
+        <li>
+          <a href="https://atiupin.github.io/webgl-diagnose/">WebGL Diagnose</a>
+          <span class="desc">WebGL capability check.</span>
+        </li>
+      </ul>
+
+      <footer><a href="https://github.com/atiupin">github.com/atiupin</a></footer>
+    </main>
+  </body>
+</html>
