@@ -38,27 +38,17 @@
 
 /* Semantic roles, mapped onto the palette */
 :root {
-  color-scheme: light dark;
-  --bg: var(--db-white);
-  --fg: var(--db-valhalla);
-  --muted: var(--db-dim-gray);
-  --rule: var(--db-heather);
-  --accent: var(--db-venice-blue);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: var(--db-valhalla);
-    --fg: var(--db-light-steel-blue);
-    --muted: var(--db-heather);
-    --rule: var(--db-deep-koamaru);
-    --accent: var(--db-cornflower);
-  }
+  color-scheme: dark;
+  --bg: var(--db-valhalla);
+  --fg: var(--db-light-steel-blue);
+  --muted: var(--db-heather);
+  --rule: var(--db-deep-koamaru);
+  --accent: var(--db-cornflower);
 }
 
 body {
   margin: 0;
-  padding: 12vh 24px 20vh;
+  padding: 96px 24px 160px;
   background: var(--bg);
   color: var(--fg);
   font-family: "Open Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
@@ -67,32 +57,33 @@ body {
 }
 
 main {
-  max-width: 34rem;
+  max-width: 544px;
   margin: 0 auto;
 }
 
 h1 {
-  margin: 0 0 0.25rem;
-  font-size: 1.25rem;
+  margin: 0 0 4px;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.2px;
 }
 
 h2 {
-  margin: 0 0 1rem;
-  font-size: 0.75rem;
+  margin: 0 0 16px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--muted);
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 16px;
 }
 
-.tagline {
-  margin: 0 0 3rem;
+/* Tagline: the paragraph right after the page title */
+h1 + p {
+  margin: 0 0 48px;
   color: var(--muted);
 }
 
@@ -103,7 +94,7 @@ ul {
 }
 
 li {
-  padding: 0.85rem 0;
+  padding: 14px 0;
   border-top: 1px solid var(--rule);
 }
 
@@ -121,14 +112,14 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
-.desc {
+small {
   display: block;
   color: var(--muted);
-  font-size: 0.9375rem;
+  font-size: 15px;
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: 48px;
   color: var(--muted);
-  font-size: 0.9375rem;
+  font-size: 15px;
 }
