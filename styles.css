@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* DawnBringer 32 palette */
+:root {
+  --db-black: #000000;
+  --db-valhalla: #222034;
+  --db-loulou: #45283c;
+  --db-oiled-cedar: #663931;
+  --db-rope: #8f563b;
+  --db-tahiti-gold: #df7126;
+  --db-twine: #d9a066;
+  --db-pancho: #eec39a;
+  --db-golden-fizz: #fbf236;
+  --db-atlantis: #99e550;
+  --db-christi: #6abe30;
+  --db-elf-green: #37946e;
+  --db-dell: #4b692f;
+  --db-verdigris: #524b24;
+  --db-opal: #323c39;
+  --db-deep-koamaru: #3f3f74;
+  --db-venice-blue: #306082;
+  --db-royal-blue: #5b6ee1;
+  --db-cornflower: #639bff;
+  --db-viking: #5fcde4;
+  --db-light-steel-blue: #cbdbfc;
+  --db-white: #ffffff;
+  --db-heather: #9badb7;
+  --db-topaz: #847e87;
+  --db-dim-gray: #696a6a;
+  --db-smokey-ash: #595652;
+  --db-clairvoyant: #76428a;
+  --db-brown: #ac3232;
+  --db-mandy: #d95763;
+  --db-plum: #d77bba;
+  --db-rain-forest: #8f974a;
+  --db-stinger: #8a6f30;
+}
+
+/* Semantic roles, mapped onto the palette */
+:root {
+  color-scheme: light dark;
+  --bg: var(--db-white);
+  --fg: var(--db-valhalla);
+  --muted: var(--db-dim-gray);
+  --rule: var(--db-heather);
+  --accent: var(--db-venice-blue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--db-valhalla);
+    --fg: var(--db-light-steel-blue);
+    --muted: var(--db-heather);
+    --rule: var(--db-deep-koamaru);
+    --accent: var(--db-cornflower);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 12vh 24px 20vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Open Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.tagline {
+  margin: 0 0 3rem;
+  color: var(--muted);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+.desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
