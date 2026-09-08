@@ -3,48 +3,45 @@
 /* DawnBringer 32 palette */
 :root {
   --db-black: #000000;
-  --db-valhalla: #222034;
-  --db-loulou: #45283c;
-  --db-oiled-cedar: #663931;
-  --db-rope: #8f563b;
-  --db-tahiti-gold: #df7126;
-  --db-twine: #d9a066;
-  --db-pancho: #eec39a;
-  --db-golden-fizz: #fbf236;
-  --db-atlantis: #99e550;
-  --db-christi: #6abe30;
-  --db-elf-green: #37946e;
-  --db-dell: #4b692f;
-  --db-verdigris: #524b24;
-  --db-opal: #323c39;
-  --db-deep-koamaru: #3f3f74;
-  --db-venice-blue: #306082;
-  --db-royal-blue: #5b6ee1;
-  --db-cornflower: #639bff;
-  --db-viking: #5fcde4;
-  --db-light-steel-blue: #cbdbfc;
+  --db-ink: #222034;
+  --db-wine: #45283c;
+  --db-cocoa: #663931;
+  --db-brown: #8f563b;
+  --db-orange: #df7126;
+  --db-tan: #d9a066;
+  --db-cream: #eec39a;
+  --db-yellow: #fbf236;
+  --db-lime: #99e550;
+  --db-green: #6abe30;
+  --db-jade: #37946e;
+  --db-moss: #4b692f;
+  --db-umber: #524b24;
+  --db-charcoal: #323c39;
+  --db-indigo: #3f3f74;
+  --db-steel: #306082;
+  --db-blue: #5b6ee1;
+  --db-azure: #639bff;
+  --db-cyan: #5fcde4;
+  --db-ice: #cbdbfc;
   --db-white: #ffffff;
-  --db-heather: #9badb7;
-  --db-topaz: #847e87;
-  --db-dim-gray: #696a6a;
-  --db-smokey-ash: #595652;
-  --db-clairvoyant: #76428a;
-  --db-brown: #ac3232;
-  --db-mandy: #d95763;
-  --db-plum: #d77bba;
-  --db-rain-forest: #8f974a;
-  --db-stinger: #8a6f30;
+  --db-silver: #9badb7;
+  --db-gray: #847e87;
+  --db-slate: #696a6a;
+  --db-ash: #595652;
+  --db-purple: #76428a;
+  --db-red: #ac3232;
+  --db-rose: #d95763;
+  --db-pink: #d77bba;
+  --db-olive: #8f974a;
+  --db-bronze: #8a6f30;
 }
 
-/* Semantic roles, mapped onto the palette */
 :root {
   color-scheme: dark;
-  --bg: var(--db-valhalla);
-  --fg: var(--db-light-steel-blue);
-  --border: var(--db-deep-koamaru);
-  --muted: var(--db-heather);
-  --rule: var(--db-deep-koamaru);
-  --accent: var(--db-viking);
+  --bg: var(--db-ink);
+  --fg: var(--db-ice);
+  --border: var(--db-indigo);
+  --link: var(--db-pink);
 }
 
 * {
@@ -54,66 +51,54 @@
 }
 
 body {
-  margin: 0;
-  padding: 96px 24px 160px;
   background: var(--bg);
   color: var(--fg);
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 main {
-  max-width: 544px;
-  margin: 0 auto;
+  border: 8px solid var(--border);
+  box-shadow: 8px 8px var(--db-black);
+  padding: 24px;
+  max-width: 640px;
+  margin: 96px 8px;
+}
+
+@media (max-width: 656px) {
+  main {
+    margin: 8px;
+  }
 }
 
 h1 {
-  margin: 0 0 4px;
+  margin-bottom: 8px;
   font-size: 30px;
   line-height: 40px;
 }
 
 h2 {
-  margin: 0 0 8px;
+  margin-bottom: 8px;
   font-size: 22px;
   line-height: 30px;
 }
 
 h3 {
-  margin: 0 0 8px;
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 24px;
 }
 
 p {
-  margin: 0 0 16px;
-}
-
-/* Tagline: the paragraph right after the page title */
-h1 + p {
-  margin: 0 0 48px;
-  color: var(--muted);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  padding: 14px 0;
-  border-top: 1px solid var(--rule);
-}
-
-li:last-child {
-  border-bottom: 1px solid var(--rule);
+  margin-bottom: 8px;
 }
 
 a {
-  color: var(--accent);
-  text-decoration-color: var(--rule);
+  color: var(--link);
+  text-decoration-color: var(--border);
   text-underline-offset: 3px;
 }
 
@@ -121,16 +106,8 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
-small {
-  display: block;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 16px;
-}
-
-footer {
-  margin-top: 48px;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 16px;
+* + h2,
+* + h3,
+* + footer {
+  margin-top: 32px;
 }
