@@ -41,9 +41,16 @@
   color-scheme: dark;
   --bg: var(--db-valhalla);
   --fg: var(--db-light-steel-blue);
+  --border: var(--db-deep-koamaru);
   --muted: var(--db-heather);
   --rule: var(--db-deep-koamaru);
-  --accent: var(--db-cornflower);
+  --accent: var(--db-viking);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,9 +58,9 @@ body {
   padding: 96px 24px 160px;
   background: var(--bg);
   color: var(--fg);
-  font-family: "Open Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 main {
@@ -63,18 +70,20 @@ main {
 
 h1 {
   margin: 0 0 4px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -0.2px;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 h2 {
-  margin: 0 0 16px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--muted);
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 p {
@@ -115,11 +124,13 @@ a:hover {
 small {
   display: block;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 footer {
   margin-top: 48px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 16px;
 }

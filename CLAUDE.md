@@ -6,7 +6,9 @@ Personal homepage listing projects hosted on GitHub Pages under
 Static site, no build step. `index.html` is served as-is from the `main` branch root.
 
 `styles.css` is the shared global stylesheet — DB32 palette, semantic color roles, Open
-Sans, and base typography. Every page links it from the site root (`/styles.css`).
+Sans, and base typography. The type scale mirrors luna2 (`src/App.tsx`): body 14/20,
+h1 30/40, h2 22/30, h3 18/24, caption 12/16, no weight overrides. Every page links it
+from the site root (`/styles.css`).
 
 ## Commit messages
 
