@@ -169,6 +169,9 @@ figure {
 
 figcaption {
   margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--db-silver);
 }
 
 * + h1,
