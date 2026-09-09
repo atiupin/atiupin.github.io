@@ -171,19 +171,6 @@ figcaption {
   margin-top: 8px;
 }
 
-.media {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 480px) {
-  .media {
-    grid-template-columns: 1fr;
-  }
-}
-
 * + h1,
 * + h2,
 * + h3,
