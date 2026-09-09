@@ -13,6 +13,13 @@
         image-rendering: pixelated;
         margin: 16px 0 24px;
       }
+
+      .trailer video {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
     </style>
   </head>
   <body>
@@ -118,13 +125,26 @@
       </p>
 
       <h2>Trailer</h2>
-      <!-- TODO: replace with a link to the trailer, or embed it. -->
-      <figure>
-        <img
-          src="media/trailer-thumb.svg"
-          alt="Trailer thumbnail placeholder"
-        />
-        <figcaption>Trailer&mdash;link to be added.</figcaption>
+      <figure class="trailer">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          poster="media/trailer-cover.png"
+          width="1920"
+          height="1080"
+        >
+          <source src="media/trailer.mp4" type="video/mp4" />
+        </video>
+        <figcaption>
+          Also on
+          <a
+            href="https://www.youtube.com/watch?v=AoRGhywssN0"
+            target="_blank"
+            rel="noopener"
+            >YouTube</a
+          >
+        </figcaption>
       </figure>
 
       <h2>Screenshots</h2>
