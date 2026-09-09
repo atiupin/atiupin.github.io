@@ -11,3 +11,7 @@ All messages should be one-liners, ideally not longer than 60 characters. Prefer
 ## Formatting
 
 Prettier owns all formatting — never hand-format; run `npx --yes prettier --write <files>` after editing any `.html`, `.css`, `.json`, or `.md`. Config lives in `.prettierrc.json`: stock defaults except `proseWrap: "never"`, which keeps every Markdown paragraph on one line. Do not hard-wrap prose.
+
+## Prose
+
+All user-facing text follows the Chicago Manual of Style, with Merriam-Webster spelling (American, not British). In particular: serial comma, em dashes closed up with no surrounding spaces, headline-style capitalization for headings, and titles of works (games included) in italics, marked up as `<cite>`.
